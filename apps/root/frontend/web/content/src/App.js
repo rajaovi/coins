@@ -1,11 +1,19 @@
-import React from 'react';
 import './App.css';
-import Signin from './pages/signin';
+import React from 'react';
+import { useDispatch } from 'react-redux';
+import { useEffect } from 'react';
+import { getAllPosts } from './store/Actions/TestAction';
+import RoutePage from './routes';
 
 function App() {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getAllPosts());
+  }, [dispatch]);
   return (
     <div className="App">
-      <Signin />
+      <RoutePage />
     </div>
   );
 }
