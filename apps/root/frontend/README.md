@@ -1,3 +1,5 @@
+#NPM Tools Support
+
 # ESLINT:
     # npm init @eslint/config@latest
 
@@ -6,7 +8,7 @@
         $ npx prettier . --write
         $ npx prettier . --check
 
-# GIT HOOKS:
+# GIT HOOKS / LINT-STAGED:
     # npm install --save-dev husky lint-staged
     # npx husky init
     # node --eval "fs.writeFileSync('.husky/pre-commit','npx lint-staged\n')"
