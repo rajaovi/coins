@@ -1,11 +1,11 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Signin from './pages/signin';
+import Dashbaord from './pages/dashboard';
 
 const RoutePage = () => {
   return (
     <Routes>
-      <Route path="/" element={<Signin />} />
+      <Route path="/" element={<Dashbaord />} />
     </Routes>
   );
 };
