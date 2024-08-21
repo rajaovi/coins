@@ -1,10 +1,15 @@
 import React from 'react';
 import Header from '../../components/header';
+import './index.scss';
+import DashbaordBodyContent from '../../components/dashboardBodyContent';
 
 const Dashbaord = () => {
   return (
     <main>
-      <Header />
+      <div className="headerWrapper">
+        <Header />
+        <DashbaordBodyContent />
+      </div>
     </main>
   );
 };
